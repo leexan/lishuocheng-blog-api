@@ -19,10 +19,10 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "prisma:gen": "prisma generate",
-    "prisma:pull": "prisma db pull",
-    "prisma:push": "prisma db push",
-    "prisma:format": "prisma format",
+    "prisma:gen": "npx prisma generate",
+    "prisma:pull": "npx prisma db pull",
+    "prisma:push": "npx prisma db push",
+    "prisma:format": "npx prisma format",
     "postinstall": "npm run prisma:gen"
   },
   "dependencies": {
